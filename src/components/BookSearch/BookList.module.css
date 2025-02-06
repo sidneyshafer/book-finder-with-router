@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 1rem 3.5rem;
+}
+
+.header h2 {
+    color: var(--color-text-secondary);
+    position: relative;
+}
+
+.header h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    margin-bottom: 45px;
+    background-color: #00a5cf;
+    transform: translateX(-50%);
+}
+
+.results {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.clear {
+    margin-right: 0;
+}

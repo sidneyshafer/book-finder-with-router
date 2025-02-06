@@ -1,0 +1,61 @@
+.header {
+    text-transform: uppercase;
+    color: var(--color-primary);
+    font-size: var(--font-size-xl);
+    text-align: center;
+    opacity: 0.8;
+    margin-bottom: 20px;
+    /* text-shadow: 0 3px 3px #1982c4; */
+}
+
+.content {
+    width: 60vw;
+    margin: 0 auto;
+}
+
+.content p {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-medium);
+}
+
+/* OLD CSS BUTTON STYLES */
+/* .content button {
+    width: 9rem;
+    font-size: 14px;
+    padding: 7px 10px;
+    font-family: inherit;
+    margin: 0 10px;
+    border-radius: 5px;
+    border: 2px solid #00a6cf78;
+    background-color: #253237;
+    color: rgba(225, 225, 225, 0.5);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease-in-out, border-color 0.7s ease-in-out;
+    z-index: 1;
+}
+
+.content button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: #00a5cf;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.7s ease-in-out;
+    border-radius: 70%;
+    z-index: -1;
+}
+
+.content button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+    z-index: -1;
+}
+
+.content button:hover {
+    color: #fff;
+    border-color: #00a5cf;
+} */

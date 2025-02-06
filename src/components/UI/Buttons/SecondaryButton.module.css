@@ -1,0 +1,18 @@
+.btn {
+    width: 7rem;
+    font-size: 14px;
+    padding: 10px 20px;
+    font-family: inherit;
+    margin: 0 10px;
+    border-radius: 5px;
+    border: 2px solid var(--color-primary-faded);
+    background-color: #253237;
+    color: rgba(225, 225, 225, 0.5);
+    cursor: pointer;
+}
+  
+.btn:hover {
+    border-color: #00a5cf;
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+}

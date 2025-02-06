@@ -1,0 +1,36 @@
+.input {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 5px;
+    color: #d5d5d5;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+  
+.input::placeholder {
+    color: #444;
+}
+  
+.input:focus {
+    outline: 2px solid #00a5cf;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 500px) {
+    .input {
+      width: 20rem;
+    }
+}
+  
+@media(min-width: 501px) and (max-width: 768px) {
+    .input {
+      width: 20rem;
+    }
+}
+  
+@media(min-width: 769px) and (max-width: 1200px) {
+    .input {
+      width: 30rem;
+    }
+}

@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+  
+.container svg {
+    position: absolute;
+    width: 400px;
+    fill: none;
+}
+  
+/* .container svg:nth-child(2) {
+    filter: blur(40px);
+} */
+  
+.container svg path {
+    d: path('M0,25 C150,110 150,-60 300,25');
+    stroke: var(--color-primary);
+    stroke-width: 50;
+    stroke-linecap: round;
+    transform: translate(50px, 50%);
+    animation: animate 2s ease-in-out infinite;
+  }
+  
+@keyframes animate {
+    0% {
+      stroke: var(--color-primary);
+      d: path('M0,25 C150,110 150,-60 300,25');
+    }
+    /* 25% {
+      stroke: var(--color-primary-faded);
+    } */
+    50% {
+      stroke: var(--color-primary);;
+      d: path('M0,25 C160,-50 140,110 300,25');
+    }
+}

@@ -1,0 +1,113 @@
+.container {
+    position: relative;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 10px 15px -3px, 
+                rgba(0, 0, 0, 0.4) 0px 4px 6px -2px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+/* BOOK IMAGE */
+.book {
+    flex: 1;
+    max-width: 40%;  /* Limit image width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book div {
+    padding: 10px;
+    border: 2px solid var(--color-primary-faded);
+    background-color: var(--color-bg-primary);
+    width: 100%;
+    height: auto;
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* BOOK INFORMATION */
+.info {
+    flex: 1;
+    color: var(--color-text-secondary);
+    text-align: left;
+    max-width: 55%;
+}
+
+.info h3 {
+    text-transform: uppercase;
+    font-size: var(--font-size-l);
+}
+
+.info small {
+    margin-top: 15px;
+    color: var(--color-text-small);
+    text-transform: uppercase;
+}
+
+.info p {
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .book {
+        max-width: 80%;
+    }
+
+    .info {
+        max-width: 90%;
+        text-align: center;
+    }
+}
+
+@media(min-width: 769px) and (max-width: 1200px) {
+    .container {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .book {
+        max-width: 35%; /* Reduce width so image doesn’t get squished */
+    }
+
+    .info {
+        max-width: 60%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+
+    .info h3 {
+        grid-column: span 2; /* Title spans across both columns */
+        text-align: center;
+    }
+
+    .info p {
+        margin-bottom: 7px;
+        margin-top: 0;
+    }
+
+    .info small {
+        margin-bottom: 5px;
+        margin-top: 0;
+    }
+}
