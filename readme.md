@@ -1,5 +1,5 @@
 # Book Finder with React Router
->React app for search books through the Open Library API
+>React app for searching books through the Open Library API
 
 ## The Home Page
 Initial `Home` page:
